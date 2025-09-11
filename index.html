@@ -8,11 +8,17 @@
   <h1>NFT Gallery</h1>
   <input id="wallet" placeholder="Enter Ethereum Address" />
   <button onclick="fetchNFTs()">Show NFTs</button>
+  <input id="search" placeholder="Search NFTs..." oninput="filterNFTs()" />
+<select id="collectionFilter" onchange="filterNFTs()">
+  <option value="">All Collections</option>
+</select>
+
   <div id="gallery"></div>
   <script src="script.js"></script>
 </body>
 
 <html>
+
 
 
 
